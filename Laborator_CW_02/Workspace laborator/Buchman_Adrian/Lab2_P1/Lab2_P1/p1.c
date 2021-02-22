@@ -2,27 +2,28 @@
 #include<stdlib.h>
 
 #pragma warning(disable:4996)
-short int NrElemente, ElementCautat;
-short int TablouCautare[250];
+unsigned char NrElemente;
+unsigned short int TablouCautare[250], ElementCautat;
 
-void Citire(short int *TablouCautare, short int *NrElemente, short int *ElementCautat) {
+void Citire(unsigned short int *TablouCautare, unsigned char *NrElemente, unsigned short int *ElementCautat) {
 	
 	printf("Dati numarul de elemente din tablou: ");
-	scanf("%hi", NrElemente);
+	scanf("%hhu", NrElemente);
 
-	for (int Index = 0; Index < *NrElemente; Index++) {
-		scanf("%hi", &TablouCautare[Index]);
+	for (unsigned char Index = 0; Index < *NrElemente; Index++) {
+		scanf("%hu", &TablouCautare[Index]);
 	}
 
 	printf("Dati elementul cautat: ");
-	scanf("%hi", ElementCautat);
+	scanf("%hu", ElementCautat);
 
 }
 
-unsigned char CautareLiniara(short int *TablouCautare, short int ElementCautat) {
+//NOTE: changed short int to unsigned short int (short int -32768 to 32767 and unsigned short int 65535)
+unsigned char CautareLiniara(unsigned short int *TablouCautare, unsigned short int ElementCautat) {
 
-	int Index = 1;
-
+	unsigned char Index = 0;
+	
 	while (Index < NrElemente && ElementCautat != TablouCautare[Index]) {
 		Index++;
 	}
@@ -30,7 +31,7 @@ unsigned char CautareLiniara(short int *TablouCautare, short int ElementCautat) 
 	if (ElementCautat == TablouCautare[Index]) {
 		return Index;
 	} else {
-		return 0;
+		return 255;
 	}
 }
 
@@ -39,8 +40,12 @@ unsigned char CautareLiniara(short int *TablouCautare, short int ElementCautat) 
 int main() {
 	
 	Citire(TablouCautare, &NrElemente, &ElementCautat);
-	printf("Elementul se afla pe pozitia %hi\n", CautareLiniara(TablouCautare, ElementCautat));
-
+	if (CautareLiniara(TablouCautare, ElementCautat) != 255) {
+		printf("Elementul se afla pe pozitia %hhu\n", CautareLiniara(TablouCautare, ElementCautat));
+	} else {
+		printf("Nu am gasit elementul in tablou!\n");
+	}
+		
 	system("pause");
 	return 0;
 }
