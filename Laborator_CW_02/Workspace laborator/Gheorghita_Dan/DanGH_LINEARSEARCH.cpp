@@ -4,10 +4,10 @@
 #include <iostream>
 
 unsigned char CautareLiniara(short int* TablouCautare, short int ElementCautat, short int NrElemente) {
-	short int Indice;
+	unsigned char Indice;
 	for (Indice = 0; Indice < NrElemente; Indice++)
 		if(*(TablouCautare + Indice) == ElementCautat)
-			return Indice + 49;
+			return Indice + 1;
 	
 	return 0;
 }
