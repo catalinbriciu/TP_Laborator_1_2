@@ -23,10 +23,7 @@ void Citire(unsigned short int *TablouCautare, unsigned char *NrElemente, unsign
 unsigned char CautareLiniara(unsigned short int *TablouCautare, unsigned short int ElementCautat) {
 
 	unsigned char Index = 0;
-	
-	while (Index < NrElemente && ElementCautat != TablouCautare[Index]) {
-		Index++;
-	}
+	for (Index = 0; Index < NrElemente && ElementCautat != TablouCautare[Index]; Index++);
 
 	if (ElementCautat == TablouCautare[Index]) {
 		return Index + 1;
