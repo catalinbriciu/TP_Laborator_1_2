@@ -1,30 +1,37 @@
 #include<stdlib.h>
 #include<stdio.h>
+unsigned short int ElementCautat, TablouCautare[250];
+unsigned  char NrElemente;
 
-int cautare(int x, int n, int A[])
+void Citire(unsigned short int *TablouCautare, unsigned char *NrElemente, unsigned short int *ElementCautat)
 {
-	int i = 1;
-
-	while ((i < n) && (x != A[i]))
-		i = i + 1;
-	if (x == A[i])
-		return i;
-	else
+	unsigned char Index;
+	printf("Dati numarul de elemente al multimii: ");
+	scanf("%hhu", NrElemente);
+	printf("Dati numarul pe care il cautati: ");
+	scanf("%hu", ElementCautat);
+	for (Index = 0; Index < *NrElemente; Index++) {
+		printf("TablouCautare[%hhu]=", Index);
+		scanf("%hu", &TablouCautare[Index]);
+	}
+}
+/*functie pentru cautarea in tablou a numarului introdus de la tastatura,in cazul gasirii
+se afiseaza pozitia sa, in caz contrar se afiseaza 0.*/
+unsigned char cautare(unsigned short int ElementCautat, unsigned short int NrElemente, unsigned short int TablouCautare[])
+{
+	unsigned char Index = 1;
+	while ((Index < NrElemente) && (ElementCautat != TablouCautare[Index]))
+		Index = Index + 1;
+	if (ElementCautat == TablouCautare[Index]) {
+		printf("Elementul  cautat se afla pe pozitia: ");
+		return Index;
+	}
+	else 	
 		return 0;
 }
-int main()
-{
-	int x, n, A[100], i;
-	printf("Dati numarul de elemente al multimii: ");
-	scanf("%d ", &n);
-	printf("Dati numarul pe care il cautati: ");
-	scanf("%d", &x);
-	for (i = 0; i < n; i++)
-	{
-		printf("A[%d]= ", i);
-		scanf("%d", &A[i]);
-	}
-	printf("%d \n", cautare(x, n, A));
+int main() {
+	Citire(TablouCautare, &NrElemente, &ElementCautat);
+    printf("%hhu\n", cautare(ElementCautat, NrElemente, TablouCautare));
 	system("pause");
 	return 0;
 }
