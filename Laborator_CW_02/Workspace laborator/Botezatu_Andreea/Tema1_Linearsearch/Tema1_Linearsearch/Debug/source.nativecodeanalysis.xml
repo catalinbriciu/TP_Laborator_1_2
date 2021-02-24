@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\andre\source\repos\tema1_linearsearch\tema1_linearsearch</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\andre\source\repos\tema1_linearsearch\tema1_linearsearch</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6328</DEFECTCODE>
+    <DESCRIPTION>Size mismatch: 'unsigned char' passed as _Param_(2) when '32 bit operand' is required in call to 'scanf'. This indicates a potential severe error. Buffer underrun or overrun can occur when when this is reported for scanf-like functions.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\andre\source\repos\tema1_linearsearch\tema1_linearsearch</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\andre\source\repos\tema1_linearsearch\tema1_linearsearch</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>20</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6328</DEFECTCODE>
+    <DESCRIPTION>Size mismatch: 'short' passed as _Param_(2) when '32 bit operand' is required in call to 'scanf'. This indicates a potential severe error. Buffer underrun or overrun can occur when when this is reported for scanf-like functions.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\andre\source\repos\tema1_linearsearch\tema1_linearsearch</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\andre\source\repos\tema1_linearsearch\tema1_linearsearch</FILEPATH>
+      <FILENAME>source.c</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6328</DEFECTCODE>
+    <DESCRIPTION>Size mismatch: 'short' passed as _Param_(2) when '32 bit operand' is required in call to 'scanf'. This indicates a potential severe error. Buffer underrun or overrun can occur when when this is reported for scanf-like functions.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>
