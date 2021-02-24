@@ -23,15 +23,12 @@ void Citire(unsigned short int *TablouCautare, unsigned char *NrElemente, unsign
 unsigned char CautareLiniara(unsigned short int *TablouCautare, unsigned short int ElementCautat) {
 
 	unsigned char Index = 0;
-	
-	while (Index < NrElemente && ElementCautat != TablouCautare[Index]) {
-		Index++;
-	}
+	for (Index = 0; Index < NrElemente && ElementCautat != TablouCautare[Index]; Index++);
 
 	if (ElementCautat == TablouCautare[Index]) {
-		return Index;
+		return Index + 1;
 	} else {
-		return 255;
+		return 0;
 	}
 }
 
@@ -40,7 +37,7 @@ unsigned char CautareLiniara(unsigned short int *TablouCautare, unsigned short i
 int main() {
 	
 	Citire(TablouCautare, &NrElemente, &ElementCautat);
-	if (CautareLiniara(TablouCautare, ElementCautat) != 255) {
+	if (CautareLiniara(TablouCautare, ElementCautat) != 0) {
 		printf("Elementul se afla pe pozitia %hhu\n", CautareLiniara(TablouCautare, ElementCautat));
 	} else {
 		printf("Nu am gasit elementul in tablou!\n");
