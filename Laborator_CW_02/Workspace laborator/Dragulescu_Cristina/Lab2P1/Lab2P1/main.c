@@ -7,12 +7,13 @@ unsigned char cautareliniara(short int vector[], short int  nr_elemente, short i
 	int i;
 	for (i = 0; i < nr_elemente; i++)
 		if (vector[i] == nr_cautat)
-			return i;
+		return i;
 	return 0;
 }
 int main()
 {
-	short int vector[50], nr_elemente, i, nr_cautat,rezultat;
+	short int vector[50], nr_elemente, nr_cautat,rezultat;
+	int i;
 	printf("Dati numarul de elemente:");
 	scanf("%hd", &nr_elemente);
 	for (i = 0; i < nr_elemente; i++)
@@ -26,8 +27,8 @@ int main()
 	printf("\nDati element de cautat:");
 	scanf("%hd", &nr_cautat);
 	rezultat = cautareliniara(vector, nr_elemente, nr_cautat);
-	if (rezultat == 0)printf("nu a fost gasit elementul cautat in vector");
-	else printf("elementul cautat se afla in vector");
+	if (rezultat == 0)printf("%hd",rezultat);
+	else printf("%hd",rezultat);
 	system("pause");
 	return 0;
 
