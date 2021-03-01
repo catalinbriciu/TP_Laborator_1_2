@@ -12,7 +12,7 @@ int CautareBinara(unsigned int A[1000], int n, int x)
 			return x;
 		else
 			if (x < A[k])
-				lf = k - 1;
+				ls = k - 1;
 			else
 		         li = k + 1;
 	}
@@ -30,7 +30,7 @@ int main()
 		printf("A[%d]=",i);
 		scanf("%d", &A[i]);
 	}
-	printf("%d\n", CautareLiniara(A, n, x));
+	printf("%d\n", CautareBinara(A, n, x));
 	system("pause");
 	return 0;
 }
