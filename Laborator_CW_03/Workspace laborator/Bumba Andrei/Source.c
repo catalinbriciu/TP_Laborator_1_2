@@ -2,24 +2,24 @@
 #include <stdlib.h>
 unsigned char CautareLiniara(short int *TablouCautare, short int ElementCautat, int NrElemente)
 {
-	int i, li, lf, k;
+	int i, limInf, limSup, pivot;
 	printf("Introduceti elemntele:\n");
 	for (i = 0; i < NrElemente; i++)
 	{
 		printf("TablouCautare[%d]= ", i);
 		scanf("%hd", &TablouCautare[i]);
 	}
-	li = 0;
-	lf = NrElemente;
-	while (li <= lf)
+	limInf = 0;
+	limSup = NrElemente;
+	while (limInf <= limSup)
 	{
-		k = (li + lf) / 2;
-		if (ElementCautat == TablouCautare[k])
-			return k;
-		else if (ElementCautat < TablouCautare[k])
-			lf = k - 1;
+		pivot = (limInf + limSup) / 2;
+		if (ElementCautat == TablouCautare[pivot])
+			return pivot;
+		else if (ElementCautat < TablouCautare[pivot])
+			limSup = pivot - 1;
 		else
-			li = k + 1;
+			limInf = pivot + 1;
 	}
 	return -1;
 }
