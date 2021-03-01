@@ -10,7 +10,7 @@ unsigned char CautareLiniara(short int *TablouCautare, unsigned char NumarElemen
 	{
 		k = (li + ls) / 2;
 		if (ElementCautat == TablouCautare[k])
-			return k;
+			return k+1;
 		else
 			if (ElementCautat < TablouCautare[k])
 				ls = k - 1;
