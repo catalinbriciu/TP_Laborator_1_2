@@ -1,0 +1,9 @@
+﻿  Source.c
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_03\workspace laborator\botea_adelin\problema_lab3_tp\problema_lab3_tp\source.c(5): warning C4101: 'index': unreferenced local variable
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_03\workspace laborator\botea_adelin\problema_lab3_tp\problema_lab3_tp\source.c(26): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_03\workspace laborator\botea_adelin\problema_lab3_tp\problema_lab3_tp\source.c(26): note: consider using '%hd' in the format string
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_03\workspace laborator\botea_adelin\problema_lab3_tp\problema_lab3_tp\source.c(28): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'unsigned char *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_03\workspace laborator\botea_adelin\problema_lab3_tp\problema_lab3_tp\source.c(28): note: consider using '%hhd' in the format string
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_03\workspace laborator\botea_adelin\problema_lab3_tp\problema_lab3_tp\source.c(32): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_03\workspace laborator\botea_adelin\problema_lab3_tp\problema_lab3_tp\source.c(32): note: consider using '%hd' in the format string
+  Problema_lab3_tp.vcxproj -> C:\Users\adeli\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_03\Workspace laborator\Botea_Adelin\Problema_lab3_tp\Debug\Problema_lab3_tp.exe
