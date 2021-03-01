@@ -16,6 +16,7 @@ int CautareBinara(unsigned int A[1000], int n, int x)
 			else
 		         li = k + 1;
 	}
+	return 0;
 }
 int main()
 {
