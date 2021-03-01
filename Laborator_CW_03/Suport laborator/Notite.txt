@@ -32,4 +32,31 @@ for(cnt = 0; count < sqrt(n); count++)
 	
 ========================Cautarea binara==========================
 a) SE APLICA DOAR PENTRU SIRURI ORDONATE!!!!!
+,
 
+1) short x
+	- signed short int ---> x este de tipul signed [-32768; +32768]
+	- unsigned short int [0; 65535]
+	
+	= signed short int 
+		x - 0 --> 0
+		x - 40000 --> -24000 (overflow)
+		x - -33000 ---> underflow ---> +832
+	= unsinged short int
+		 - 1 ---> 65534 (underflow)
+   
+   
+Transformare decimal to binara
+
+94 = 64 + 16 + 8 + 4 + 2 
+
+01011110
+
+64 = 2 ^ 6
+16 = 2 ^ 4
+8 = 2 ^ 3
+4 = 2 ^ 2
+2 = 2 ^ 1
+
+
+	
