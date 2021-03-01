@@ -83,6 +83,7 @@ Analiza problemei:
 - de unde citim numerele (tastatura/fisiere) --- tastatura
 
 =====skeleton=========
+//hint; short int tab[20] --> CautareLiniara(&tab[0],element); 
 
 unsigned char CautareLiniara(short int * TablouCautare, short int ElementCautat) {
 	//fill with the code
