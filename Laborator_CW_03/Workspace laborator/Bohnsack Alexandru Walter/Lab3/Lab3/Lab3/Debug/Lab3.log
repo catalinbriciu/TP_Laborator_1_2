@@ -1,0 +1,11 @@
+﻿  Lab3.c
+c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(14): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(14): note: consider using '%hd' in the format string
+c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(17): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(17): note: consider using '%hd' in the format string
+c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(35): warning C4047: 'function': 'short *' differs in levels of indirection from 'short **'
+c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(35): warning C4024: 'CautareLiniara': different types for formal and actual parameter 1
+c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(35): warning C4047: 'function': 'short' differs in levels of indirection from 'short *'
+c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(35): warning C4024: 'CautareLiniara': different types for formal and actual parameter 2
+c:\users\walter\onedrive\desktop\faculta\tp\lab3\lab3\lab3\lab3.c(29): warning C4716: 'CautareLiniara': must return a value
+  Lab3.vcxproj -> C:\Users\Walter\OneDrive\Desktop\Faculta\TP\Lab3\Lab3\Debug\Lab3.exe
