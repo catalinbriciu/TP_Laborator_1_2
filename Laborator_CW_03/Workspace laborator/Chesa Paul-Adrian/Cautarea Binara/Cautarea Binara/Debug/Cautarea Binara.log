@@ -1,0 +1,11 @@
+﻿  Cautare_Binara.c
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(14): warning C4477: 'scanf' : format string '%hhu' requires an argument of type 'unsigned char *', but variadic argument 1 has type 'unsigned short *'
+  c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(14): note: consider using '%hu' in the format string
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(26): warning C4047: 'initializing': 'unsigned char' differs in levels of indirection from 'unsigned char *'
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(56): warning C4133: 'function': incompatible types - from 'unsigned char [250]' to 'unsigned short *'
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(56): warning C4047: 'function': 'unsigned char *' differs in levels of indirection from 'unsigned char **'
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(56): warning C4024: 'citire': different types for formal and actual parameter 2
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(56): warning C4020: 'citire': too many actual parameters
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(57): warning C4133: 'function': incompatible types - from 'unsigned char [250]' to 'short *'
+c:\users\adrian\source\repos\cautarea binara\cautarea binara\cautare_binara.c(52): warning C4715: 'CautareBinara': not all control paths return a value
+  Cautarea Binara.vcxproj -> C:\Users\Adrian\source\repos\Cautarea Binara\Debug\Cautarea Binara.exe
