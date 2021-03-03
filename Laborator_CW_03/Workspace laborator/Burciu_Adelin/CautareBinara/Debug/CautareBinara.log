@@ -1,0 +1,5 @@
+﻿  CautareBinara.c
+C:\Users\COLOSSUS\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_03\Workspace laborator\Burciu_Adelin\CautareBinara\CautareBinara.c(15,17): warning C4244: 'return': conversion from 'short' to 'unsigned char', possible loss of data
+C:\Users\COLOSSUS\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_03\Workspace laborator\Burciu_Adelin\CautareBinara\CautareBinara.c(6,12): warning C4101: 'k': unreferenced local variable
+C:\Users\COLOSSUS\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_03\Workspace laborator\Burciu_Adelin\CautareBinara\CautareBinara.c(6,15): warning C4101: 'aux': unreferenced local variable
+  CautareBinara.vcxproj -> C:\Users\COLOSSUS\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_03\Workspace laborator\Burciu_Adelin\CautareBinara\Debug\CautareBinara.exe

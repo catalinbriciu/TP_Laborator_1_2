@@ -1,0 +1,2 @@
+C:\Users\COLOSSUS\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_03\Workspace laborator\Burciu_Adelin\CautareBinara\Debug\CautareBinara.exe
+C:\Users\COLOSSUS\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_03\Workspace laborator\Burciu_Adelin\CautareBinara\Debug\CautareBinara.pdb
