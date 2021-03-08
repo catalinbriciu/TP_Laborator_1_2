@@ -1,11 +1,12 @@
 ﻿  Source.c
-c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(14): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
-  c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(14): note: consider using '%hd' in the format string
-c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(17): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
-  c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(17): note: consider using '%hd' in the format string
-c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(33): warning C4047: 'function': 'short *' differs in levels of indirection from 'short **'
-c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(33): warning C4024: 'CautareLiniara': different types for formal and actual parameter 1
-c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(33): warning C4047: 'function': 'short' differs in levels of indirection from 'short *'
-c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(33): warning C4024: 'CautareLiniara': different types for formal and actual parameter 2
-c:\users\andre\source\repos\tema_linearsearch\tema_linearsearch\source.c(28): warning C4716: 'CautareLiniara': must return a value
-  Tema_LINEARSEARCH.vcxproj -> C:\Users\andre\source\repos\Tema_LINEARSEARCH\Debug\Tema_LINEARSEARCH.exe
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(14): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(14): note: consider using '%hd' in the format string
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(17): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(17): note: consider using '%hd' in the format string
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(33): warning C4047: 'function': 'short *' differs in levels of indirection from 'short **'
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(33): warning C4024: 'CautareLiniara': different types for formal and actual parameter 1
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(33): warning C4047: 'function': 'short' differs in levels of indirection from 'short *'
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(33): warning C4024: 'CautareLiniara': different types for formal and actual parameter 2
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botezatu_andreea\tema_linearsearch\tema_linearsearch\source.c(28): warning C4716: 'CautareLiniara': must return a value
+  LINK : C:\Users\adeli\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_02\Workspace laborator\Botezatu_Andreea\Tema_LINEARSEARCH\Debug\Tema_LINEARSEARCH.exe not found or not built by the last incremental link; performing full link
+  Tema_LINEARSEARCH.vcxproj -> C:\Users\adeli\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_02\Workspace laborator\Botezatu_Andreea\Tema_LINEARSEARCH\Debug\Tema_LINEARSEARCH.exe

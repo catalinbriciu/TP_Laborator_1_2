@@ -11,7 +11,7 @@ unsigned char CautareLiniara(short int *TablouCautare, unsigned char NumarElemen
 int main()
 {
 	short int TablouCautare[1000], ElementCautat;
-	unsigned char NumarElementeTablou, index;
+	short int NumarElementeTablou, index;
 	printf("Introduceti numarul cautat:");
 	scanf("%d", &ElementCautat);
 	printf("Introduceti numarul de elemente al listei:");
