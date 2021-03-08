@@ -1,7 +1,5 @@
 #include<stdio.h>
 
-const short int nr = 15;
-const unsigned char poz = 2;
 
 unsigned short SetFlag(short int nr, unsigned char poz)
 {
@@ -25,6 +23,10 @@ unsigned char GetFlag(short int nr, unsigned char poz) {
 		return 0;
 	}
 }
+
+const short int nr = 15;
+const unsigned char poz = 2;
+
 int main()
 {
 	
