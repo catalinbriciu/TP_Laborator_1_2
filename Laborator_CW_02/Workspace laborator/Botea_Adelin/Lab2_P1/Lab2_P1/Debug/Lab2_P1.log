@@ -1,1 +1,9 @@
-﻿  Lab2_P1.vcxproj -> C:\Users\adeli\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_02\Workspace laborator\Botea_Adelin\Lab2_P1\Debug\Lab2_P1.exe
+﻿  Source.c
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botea_adelin\lab2_p1\lab2_p1\source.c(16): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botea_adelin\lab2_p1\lab2_p1\source.c(16): note: consider using '%hd' in the format string
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botea_adelin\lab2_p1\lab2_p1\source.c(18): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botea_adelin\lab2_p1\lab2_p1\source.c(18): note: consider using '%hd' in the format string
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botea_adelin\lab2_p1\lab2_p1\source.c(22): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+  c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botea_adelin\lab2_p1\lab2_p1\source.c(22): note: consider using '%hd' in the format string
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_02\workspace laborator\botea_adelin\lab2_p1\lab2_p1\source.c(24): warning C4244: 'function': conversion from 'short' to 'unsigned char', possible loss of data
+  Lab2_P1.vcxproj -> C:\Users\adeli\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_02\Workspace laborator\Botea_Adelin\Lab2_P1\Debug\Lab2_P1.exe
