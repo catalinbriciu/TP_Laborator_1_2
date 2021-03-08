@@ -23,7 +23,8 @@ unsigned short ChangeFlag(short int number, unsigned char position)
 
 int main()
 {
-	const int position = 3, number = 17;
+	const short int number = 17;
+	const unsigned char position = 3;
 	printf("%d\n", SetFlag(number, position));
 	printf("%d\n", ClearFlag(number, position));
 	printf("%d\n", GetFlag(number, position));
