@@ -1,12 +1,11 @@
 #include<stdio.h>
+
+
 unsigned short SetFlag(short int nr, unsigned char poz)
 {
 	return (nr | (1 << poz));
 	
 }
-
-const short int nr=15;
-const unsigned char poz=2;
 
 unsigned short ChangeFlag(short int nr, unsigned char poz)
 {
@@ -24,6 +23,10 @@ unsigned char GetFlag(short int nr, unsigned char poz) {
 		return 0;
 	}
 }
+
+const short int nr = 15;
+const unsigned char poz = 2;
+
 int main()
 {
 	
@@ -31,6 +34,6 @@ int main()
 	printf("%hu\n", SetFlag(nr,poz));
 	printf("%hu\n", ChangeFlag(nr, poz));
 	printf("%hu\n", ClearFlag(nr, poz));
-	printf("%hu\n", GetFlag(nr, poz));
+	printf("%hhu\n", GetFlag(nr, poz));
 	return 0;
 }
