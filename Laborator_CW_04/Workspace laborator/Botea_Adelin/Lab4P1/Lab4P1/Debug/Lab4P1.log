@@ -1,0 +1,7 @@
+﻿  Source.c
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_04\workspace laborator\botea_adelin\lab4p1\lab4p1\source.c(13): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_04\workspace laborator\botea_adelin\lab4p1\lab4p1\source.c(6): warning C4716: 'SetFlag': must return a value
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_04\workspace laborator\botea_adelin\lab4p1\lab4p1\source.c(10): warning C4716: 'ClearFlag': must return a value
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_04\workspace laborator\botea_adelin\lab4p1\lab4p1\source.c(14): warning C4716: 'GetFlag': must return a value
+c:\users\adeli\documents\github\tp_laborator_1_2\laborator_cw_04\workspace laborator\botea_adelin\lab4p1\lab4p1\source.c(18): warning C4716: 'ChangeFlag': must return a value
+  Lab4P1.vcxproj -> C:\Users\adeli\Documents\GitHub\TP_Laborator_1_2\Laborator_CW_04\Workspace laborator\Botea_Adelin\Lab4P1\Debug\Lab4P1.exe
