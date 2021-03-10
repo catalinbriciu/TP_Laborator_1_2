@@ -28,15 +28,15 @@ unsigned short ChangeFlag(short int number, unsigned char position)
 }
 int main()
 {
-	 const short int number = 0x22;
+	 const short int number = 0x44;
 		
-	 const unsigned char position = 2;
+	 const unsigned char position = 3;
 
 
-	printf("%hhu\n", ClearFlag(number, position));
-	printf("%hhu\n", SetFlag(number, position));
+	printf("%hu\n", ClearFlag(number, position));
+	printf("%hu\n", SetFlag(number, position));
 	printf("%hhu\n", GetFlag(number, position));
-	printf("%hhu\n", ChangeFlag(number, position));
+	printf("%hu\n", ChangeFlag(number, position));
 	system("pause");
 	return 0;
 }
