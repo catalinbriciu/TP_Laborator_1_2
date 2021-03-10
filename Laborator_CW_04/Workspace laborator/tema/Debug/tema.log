@@ -1,0 +1,11 @@
+﻿  tema.c
+C:\Users\COLOSSUS\source\repos\tema\tema.c(16,49): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\COLOSSUS\source\repos\tema\tema.c(37,9): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+C:\Users\COLOSSUS\source\repos\tema\tema.c(37,9): message : consider using '%hd' in the format string
+C:\Users\COLOSSUS\source\repos\tema\tema.c(39,9): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'unsigned char *'
+C:\Users\COLOSSUS\source\repos\tema\tema.c(39,9): message : consider using '%hhd' in the format string
+C:\Users\COLOSSUS\source\repos\tema\tema.c(41,9): warning C4477: 'scanf' : format string '%d' requires an argument of type 'int *', but variadic argument 1 has type 'short *'
+C:\Users\COLOSSUS\source\repos\tema\tema.c(41,9): message : consider using '%hd' in the format string
+C:\Users\COLOSSUS\source\repos\tema\tema.c(22): warning C4716: 'ChangeFlag': must return a value
+C:\Users\COLOSSUS\source\repos\tema\tema.c(18): warning C4715: 'GetFlag': not all control paths return a value
+  tema.vcxproj -> C:\Users\COLOSSUS\source\repos\tema\Debug\tema.exe
