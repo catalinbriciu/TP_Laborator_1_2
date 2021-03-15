@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 unsigned char Tablou[125];
-const unsigned short ElementeDeVerificat[] = {121, 423, 88, 89, 874};
+const unsigned short ElementeDeVerificat[] = {121, 420, 69, 1, 874};
 
 void SetValue(unsigned char *Tablou, unsigned short int Value);
 unsigned char isValueIntoTable(unsigned char *Tablou, unsigned short int Value);
