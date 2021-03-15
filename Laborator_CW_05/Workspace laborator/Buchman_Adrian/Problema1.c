@@ -15,9 +15,9 @@ int main() {
 
     for(unsigned char Index = 0; Index < 5; Index++) {
         if(isValueIntoTable(Tablou, ElementeDeVerificat[Index])) {
-            printf("Elementul %d se afla in Tablou\n", ElementeDeVerificat[Index]);
+            printf("Elementul %hu se afla in Tablou\n", ElementeDeVerificat[Index]);
         } else {
-            printf("Elementul %d nu se afla in Tablou\n", ElementeDeVerificat[Index]);
+            printf("Elementul %hu nu se afla in Tablou\n", ElementeDeVerificat[Index]);
         }
     }
     system("pause");
