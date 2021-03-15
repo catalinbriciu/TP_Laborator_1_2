@@ -3,7 +3,7 @@
 
 void SetValue(unsigned char *tab, short int value) 
 {
-	tab[value / 8] = tab[value / 8] | (1 << value % 8);
+	tab[value / 8] = tab[value / 8] | (1 << (value % 8));
 }
 
 unsigned char IsValueIntoTable(unsigned char *tab, short int value) 
