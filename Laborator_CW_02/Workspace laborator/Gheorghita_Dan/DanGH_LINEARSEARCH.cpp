@@ -29,7 +29,7 @@ int main()
 	for (Indice = 0; Indice < NrElemente; Indice++) 
 		std::cin >> *(TablouCautare + Indice);
 
-	std::cout << CautareLiniara(TablouCautare, ElementCautat, NrElemente);
+	std::cout << (int)CautareLiniara(TablouCautare, ElementCautat, NrElemente);
 
 }
 
