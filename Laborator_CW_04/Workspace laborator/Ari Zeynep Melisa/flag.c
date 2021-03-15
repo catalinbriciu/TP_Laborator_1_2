@@ -3,12 +3,12 @@
 
 unsigned short SetFlag(short int number, unsigned char position)
 {
-	return number | (1 << position);
+	return (number | (1 << position));
 }
 
 unsigned short ClearFlag(short int number, unsigned char position)
 {
-	return number & !(1 << position);
+	return (number & ~(1 << position));
 }
 
 unsigned char GetFlag(short int number, unsigned char position)
@@ -18,7 +18,7 @@ unsigned char GetFlag(short int number, unsigned char position)
 
 unsigned short ChangeFlag(short int number, unsigned char position)
 {
-	return number ^ (1 << position);
+	return (number ^ (1 << position));
 }
 
 int main()
