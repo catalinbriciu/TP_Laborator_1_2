@@ -1,0 +1,5 @@
+﻿  Tabela.c
+c:\users\adrian\source\repos\tabela biti\tabela biti\tabela.c(7): warning C4244: '=': conversion from 'short' to 'unsigned char', possible loss of data
+c:\users\adrian\source\repos\tabela biti\tabela biti\tabela.c(14): warning C4244: 'return': conversion from 'short' to 'unsigned char', possible loss of data
+c:\users\adrian\source\repos\tabela biti\tabela biti\tabela.c(17): warning C4715: 'IsValueInTabel': not all control paths return a value
+  Tabela biti.vcxproj -> C:\Users\Adrian\source\repos\Tabela biti\Debug\Tabela biti.exe
