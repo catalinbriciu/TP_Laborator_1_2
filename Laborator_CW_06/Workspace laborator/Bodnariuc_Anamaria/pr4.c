@@ -14,7 +14,7 @@ void Swap3(int *p, int *q) { // prin referinta
 	k = *p; *p = *q; *q = k;
 }
 int main() {
-	unsigned int a = 2; b = 5;
+	unsigned int a = 2, b = 5;
 	Swap1(a, b); printf("Swap1 -> %d %d\n", a, b);
 	//Swap2(a, b); printf("Swap2 -> %d %d\n", a, b);
 	Swap3(&a, &b); printf("Swap3 -> %d %d\n", a, b);
