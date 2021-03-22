@@ -1,5 +1,5 @@
 Prezenta lab 5
-1. Ari    
+1. Ari  (+1)
 2. Estera
 3. Anamaria
 4. Alexandru B.
@@ -9,8 +9,8 @@ Prezenta lab 5
 8. Adelin
 9. Andreea (COVID)
 10. Adrian B. (+1)
-11. Dan B.
-12. Andrei B.
+11. Dan B.    (+1)
+12. Andrei B.(+1)
 13. Adelin Burciu
 14. Adrian
 15. Ion
