@@ -8,7 +8,7 @@ void SetValue(unsigned char*Tablou, short int value) {
 	byte = value / 8;
 	bit = value % 8;
 
-	Tablou[byte] = Tablou[byte] | (1 << bit);
+	Tablou[byte] = Tablou[byte] | (1u << bit);
 
 }
 
