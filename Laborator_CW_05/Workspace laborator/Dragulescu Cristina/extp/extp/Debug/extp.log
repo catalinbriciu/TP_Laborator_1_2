@@ -1,0 +1,3 @@
+﻿  main.c
+c:\users\ale cristina\source\repos\extp\extp\main.c(17): warning C4716: 'IsValueIntoTable': must return a value
+  extp.vcxproj -> C:\Users\Ale Cristina\source\repos\extp\Debug\extp.exe
