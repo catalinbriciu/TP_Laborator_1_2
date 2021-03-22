@@ -19,3 +19,4 @@ int main() {
 	//Swap2(a,b);printf("Swap2 -> %d %d\n",a,b);
 	Swap3(&a, &b); printf("Swap3 -> %d %d\n", a, b);
 	return 0;
+}
