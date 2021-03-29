@@ -51,6 +51,9 @@ unsigned char IsStackEmpty(unsigned char *SP) {
 
 void CreateStack(unsigned char * Stack, unsigned char * SP) {
     *SP = 0;
+    for(unsigned char Index = 0; Index < MAX_STACK_SIZE; Index++) {
+        Stack[Index] = 0;
+    }
 }
 
 unsigned char ManaPnuelli(unsigned char Val) {
