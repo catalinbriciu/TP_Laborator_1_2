@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void Swap1(int p, int q) { // prin valoare
+void Swap1(int p, int q)
+{ // prin valoare
 	int k;
 	k = p; p = q; q = k;
 }
@@ -9,11 +10,14 @@ void Swap1(int p, int q) { // prin valoare
 int k;
 k=p;p=q;q=k;
 }*/
-void Swap3(int *p, int *q) { // prin referinta
+void Swap3(int *p, int *q)
+{ // prin referinta
 	int k;
 	k = *p; *p = *q; *q = k;
 }
-int main() {
+
+int main()
+{
 	int a = 2, b = 5;
 	Swap1(a, b); printf("Swap1 -> %d %d\n", a, b);
 	//Swap2(a,b);printf("Swap2 -> %d %d\n",a,b);
