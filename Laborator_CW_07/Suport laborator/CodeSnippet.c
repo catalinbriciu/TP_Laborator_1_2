@@ -1,3 +1,5 @@
+#include<stdio.h>
+#include<stdlib>
 #define MAX_STACK_SIZE 12u
 
 void Push(unsigned char* Stack, unsigned char * SP, unsigned char ValueToAdd);
