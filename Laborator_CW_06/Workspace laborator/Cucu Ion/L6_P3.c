@@ -1,7 +1,11 @@
+#include<stdlib.h>
+#include<stdio.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #define tip char
 tip *vPtr, *vPtr2;
+
 int main()
 {
 	vPtr = (tip *)malloc(sizeof(tip));
