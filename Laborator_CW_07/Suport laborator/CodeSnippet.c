@@ -12,6 +12,8 @@ unsigned char MyStack[MAX_STACK_SIZE];
 unsigned char StackPointer;
 
 
+
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	unsigned char Val;
