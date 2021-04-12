@@ -1,0 +1,3 @@
+﻿  forma_poloneza.c
+C:\Users\COLOSSUS\source\repos\forma_poloneza\forma_poloneza\forma_poloneza.c(17,27): warning C4013: 'strlen' undefined; assuming extern returning int
+  forma_poloneza.vcxproj -> C:\Users\COLOSSUS\source\repos\forma_poloneza\Debug\forma_poloneza.exe
