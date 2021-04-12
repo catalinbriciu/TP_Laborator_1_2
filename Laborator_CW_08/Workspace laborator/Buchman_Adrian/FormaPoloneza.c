@@ -21,7 +21,6 @@ int main() {
     fputs(SirFinal, stdout);
     fputs("\n", stdout);
 
-
     system("pause");
     return 0;
 }
