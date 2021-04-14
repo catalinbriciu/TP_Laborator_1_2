@@ -48,7 +48,7 @@ int main()
 {
 	printf("Dati numarul de elemente: ");
 	scanf("%d", &n);
-	system("pause");
 	BK(1);
+	system("pause");
 	return 0;
 }
