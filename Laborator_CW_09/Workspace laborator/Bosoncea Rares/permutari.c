@@ -37,18 +37,14 @@ void afisare(int k)
 }
 void BK(int k)
 {
-	int i;
-
-	for (i = 1; i <= n; i++)
+	if (solution(k))
+		afisare(k);
+	else
 	{
-		v[k] = i;
-		if (valid(k))
-		{
-			if (solution(k))
-				afisare(k);
-			else
+		init(k);
+		while (succesor(k))
+			if (valid(k))
 				BK(k + 1);
-		}
 	}
 }
 
