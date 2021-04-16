@@ -10,6 +10,8 @@ void BK(int k);
 
 int main()
 {
+	// Fie permutari de n
+	printf("n= ");
 	scanf("%d", &n);
 	BK(1);
 	return 0; 
