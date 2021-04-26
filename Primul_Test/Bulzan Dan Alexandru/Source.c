@@ -79,11 +79,13 @@ void Problema(unsigned short Stiva[]) {
 
 
 	while (Varf) {
-		printf("Pentru numarul %d ; biti de 1: %d\n", Varf, Numar_1(Stiva[Varf-1]));
+		printf("Pentru numarul %d ; biti de 1: %d\n", Stiva[Varf - 1], Numar_1(Stiva[Varf-1]));
 
-		printf("Pentrul numarul %d ;Dupa  mascare bitului 2: %d\n", Varf, Mascare_2(Stiva[Varf-1]));
+		printf("Pentrul numarul %d ;Dupa  mascare bitului 2: %d\n", Stiva[Varf - 1], Mascare_2(Stiva[Varf-1]));
 
-		printf("Pentrul numarul %d ;Dupa  ce bitul 6 devine 0 : %d\n", Varf, Bit6_0(Stiva[Varf-1]));
+		printf("Pentrul numarul %d ;Dupa  ce bitul 6 devine 0 : %d\n", Stiva[Varf - 1], Bit6_0(Stiva[Varf-1]));
+		
+		printf("\n");
 		Pop();
 
 	}
