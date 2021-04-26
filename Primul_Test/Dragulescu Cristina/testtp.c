@@ -1,6 +1,5 @@
 
 #include<stdio.h>
-#include<string.h>
 #include<stdlib.h>
 #define max 10
 
@@ -48,20 +47,21 @@ int pop()
 
 
 
-unsigned int numarare_biti_1(int n)
-{
-	unsigned int k = 0;
-	while (n) {
-		k += n & 1;
-		n >>= 1;
+unsigned int numarare_biti_1(int v)
+	{
+		unsigned int k = 0;
+		while (v) {
+			k += v & 1;
+			v >>= 1;
+		}
+		return k;
 	}
-	return k;
-}
+
 
 int main()
 {
-	unsigned int b,x;
-	int i;
+	
+	int i,v;
 	push(1);
 	push(5);
 	push(3);
@@ -71,13 +71,18 @@ int main()
 	push(4);
 	for (i = 0; i < 7; i++)
 	{
-		printf("\n%u", pop());
+		printf("\n%d", pop());
 	}
 
 		while (count != 0)
 		{
-			x = pop();
-			printf("%d", numarare_biti_1(x));
+			v= pop();
+			v= numarare_biti_1(v);
+			printf("\n%d", v);
+			
 		}
+		
+		
+		system("pause");
 		return 0;
 }
