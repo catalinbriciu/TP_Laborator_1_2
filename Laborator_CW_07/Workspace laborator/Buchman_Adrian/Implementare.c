@@ -25,7 +25,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	return 0;
 }
 
-void Push(unsigned char* Stack, unsigned char * SP, unsigned char ValueToAdd) {
+void Push(unsigned short int* Stack, unsigned c * SP, unsigned char ValueToAdd) {
     Stack[++(*SP)];
 }
 
