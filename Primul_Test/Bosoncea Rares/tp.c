@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 unsigned short *v;
-unsigned int i = 0;
+unsigned char i = 0;
 
 int isEmpty()
 {
@@ -45,7 +45,8 @@ int pop()
 
 void main()
 {
-	unsigned int i, nr, j;
+	unsigned char t, nr, j, nr2;
+	unsigned short mascare;
 	v = (unsigned short*)malloc(10 * sizeof(unsigned short));
 	push(10);
 	push(12);
@@ -54,15 +55,20 @@ void main()
 	push(20);
 	push(24);
 	push(16);
-	for (i = 0; i < 7; i++)
+	for (t = 0; t < 7; t++)
 	{
 		nr = 0;
 		for (j = 0; j < 31; j++)
 			if ((v[i] >> j) & 1 == 1)
 				nr++;
-		printf("Numarul de biti de 1 al numarului %d este %d", )
-			printf("\n%d", pop());
+		printf("Numarul de biti de 1 al numarului %d este %d\n", v[i], nr);
+		mascare = ((v[i] >> 2) & 1) | 1;
+		nr2 = 0;
+		for (j = 0; j < 31; j++)
+			if ((v[i] >> j) & 1 == 1)
+				nr2++;
+		printf("Numarul de biti de 1 al numarului %d dupa mascare este %d\n", mascare, nr2);
+		printf("%d\n", pop());
 	}
-
+	system("pause");
 }
-
