@@ -9,7 +9,7 @@
 int Stiva[NrMAX];
 int nr = 0;
 
-int If_Empty()
+int IfEmpty()
 {
 	if (nr == 0)
 		return 1;
@@ -17,7 +17,7 @@ int If_Empty()
 		return 0;
 }
 
-int If_Full()
+int IfFull()
 {
 	if (nr == NrMAX)
 		return 1;
@@ -28,7 +28,7 @@ int If_Full()
 
 void push(int x)
 {
-	if (!isFull())
+	if (!IfFull())
 	{
 		Stiva[nr] = x;
 		nr++;
@@ -38,12 +38,12 @@ void push(int x)
 
 int pop()
 {
-	if (!isEmpty())
+	if (!IfEmpty())
 	{
-		int res;
-		res = Stiva[nr - 1];
+		int nr_res;
+		nr_res = Stiva[nr - 1];
 		nr--;
-		return res;
+		return nr_res;
 
 	}
 	else printf("stiva este goala");
@@ -62,14 +62,18 @@ void main()
 	push(2);
 	push(7);
 	push(11);
+
 	for (i = 0; i < 7; i++)
 	{
-		printf("\n%u", pop());
+		printf("\n%u\n", pop());
 	}
+
+	NrDeBitiDeUnu(Stiva, nr);
 }
 
-unsigned char NrDeBitiDeUnu(int *Stiva, unsigned char nr)
+unsigned int NrDeBitiDeUnu(int *Stiva, unsigned char nr)
 {
+	int i, j;
 	unsigned char NrBitiUnu = 0;
 	//i-elemente; j-index pe bit;
 	for (i = 0; i < nr; i++)
@@ -82,16 +86,4 @@ unsigned char NrDeBitiDeUnu(int *Stiva, unsigned char nr)
 			}
 		}
 	}
-}
-
-unsigned char TotalNumberOfBitesOfOne(int* Table, unsigned char NumberOfElements) {
-	unsigned char NumberOfOnes = 0;
-	for (unsigned char Index = 0; Index < NumberOfElements; Index++) {
-		for (unsigned char IndexOnes = 0; IndexOnes < 32; IndexOnes++) {
-			if (Table[Index] & (1 << IndexOnes)) {
-				NumberOfOnes++;
-			}
-		}
-	}
-	return NumberOfOnes;
 }
