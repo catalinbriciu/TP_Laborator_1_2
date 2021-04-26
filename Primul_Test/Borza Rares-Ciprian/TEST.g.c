@@ -1,28 +1,26 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-#define MAX 10
 
-int stiva[MAX];
+int stiva[10];
 int count = 0;
-
-int Gol(){
+int isEmpty(){
 	if (count == 0)
 		return 1;
 	else
 		return 0;
 }
 
-int Plin(){
-	if (count == MAX)
+int isFull(){
+	if (count == max)
 		return 1;
 	else
 		return 0;
 }
 
-
 void push(int x){
-	if (!Plin()){
+	if (!isFull())
+	{
 		stiva[count] = x;
 		count++;
 	}
@@ -30,7 +28,8 @@ void push(int x){
 }
 
 int pop(){
-	if (!Gol()){
+	if (!isEmpty())
+	{
 		int res;
 		res = stiva[count - 1];
 		count--;
@@ -39,14 +38,16 @@ int pop(){
 	else printf("stiva este goala");
 }
 
-
-
-int main(){
+void main(){
 	int i;
-	push(1); push(2); push(3); push(4); push(5); push(6); push(0);
+	push(69);
+	push(420);
+	push(42069);
+	push(1308);
+	push(2001);
+	push(20196);
+	push(123);
 	for (i = 0; i < 7; i++){
 		printf("\n%u", pop());
 	}
-	system("pause");
-	return 0;
 }
