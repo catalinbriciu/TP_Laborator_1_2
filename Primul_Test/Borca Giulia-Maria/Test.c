@@ -5,8 +5,9 @@
 #define max 10
 
 int Stack[max];
-unsigned char SP=0;
+unsigned char SP = 0;
 
+//functie pentru adaugarea unui element in stiva
 void Push(unsigned char *Stack, unsigned char *SP, unsigned char Value)
 {
 	if (IsStackFull(&SP) == 0)
@@ -18,14 +19,21 @@ void Push(unsigned char *Stack, unsigned char *SP, unsigned char Value)
 		printf("Stiva este plina.\n");
 }
 
+//functie pentru scoaterea elementelor din stiva
 unsigned char Pop(unsigned char *Stack, unsigned char *SP)
 {
-	if (IsStackEmpty(&SP) == 0)
-		(*SP)--;
-	else
-		printf("Stiva este goala.\n");
+	while (IsStackEmpty(*SP) != 0)
+	{
+		int nr;
+		nr = Stack[*SP];
+		*(SP)--;
+		printf("%d\n", &nr);
+	}
+	printf("\nStiva este goala.\n");
+
 }
 
+//verificam daca stiva este plina
 unsigned char IsStackFull(unsigned char *SP)
 {
 	if (*SP == max)
@@ -34,6 +42,7 @@ unsigned char IsStackFull(unsigned char *SP)
 		return 0;
 }
 
+//verificam daca stiva este goala
 unsigned char IsStackEmpty(unsigned char *SP)
 {
 	if (*SP == 0)
@@ -45,13 +54,16 @@ unsigned char IsStackEmpty(unsigned char *SP)
 void main()
 {
 	int i;
-	push(5);
-	push(10);
-	push(47);
-	push(59);
-	push(23);
-	for (i = 0; i < 5; i++)
+	push(&Stack,&SP,5);
+	push(&Stack,&SP,10);
+	push(&Stack,&SP,47);
+	push(&Stack,&SP,59);
+	push(&Stack,&SP,23);
+	push(&Stack,&SP,90);
+	push(&Stack,&SP,76);
+	push(&Stack,&SP,100);
+	for (i = 0; i < 7; i++)
 	{
-		printf("%u\n", Pop(Stack,SP));
+		printf("%u\n", Pop(&Stack, &SP));
 	}
 }
