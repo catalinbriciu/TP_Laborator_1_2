@@ -11,7 +11,8 @@ g) numarul dupa ce bitul 6 devine 0. (1p)*/
 #include<stdlib.h>
 
 #define MAX 10
-unsigned short stack[MAX], top = -1;
+unsigned short stack[MAX];
+int top = -1;
 
 int isEmpty() {
 
@@ -80,28 +81,27 @@ unsigned char GetFlag(unsigned short Number, unsigned short Position)
 
 void main()
 {
-	int n, Nr, Biti1,Masc2,NrClear6, aux;
-	do {
-		printf("Dati cate numere doriti sa introduceti in stiva: ");
-		scanf("%d", &Nr);
-	} while(Nr > 10);
-
-	printf("Dati numerele ce urmeaza sa fie introduse in stiva: ");
-	do {
-		scanf("%d ", &n);
-		push(n);
-	} while (top != Nr-2);
+	int n, Biti1,Masc2,NrClear6, aux;
+	printf("Dati numerele ce urmeaza sa fie introduse in stiva:\n");
+	while (top < 6) {
+			scanf("%d", &n);
+			push(n);
+		}
 	
-	/*while (top != -1)
+	printf("\n");
+	while (top != -1)
 	{
 		unsigned short x = pop();
+		printf("Pentru %d\n", x);
 		Biti1 = bit_1(x);
+		printf("Nr biti 1: %d\n", Biti1);
 		Masc2 = ClearFlag(x, 2);
+		printf("Dupa mascarea bitul 2: %d\n", Masc2);
 		aux = GetFlag(x, 6);
 		if (aux == 1) {
-			ClearFlag(x, 6);
+			x = ClearFlag(x, 6);
 		}
-		printf("Nr de biti de 1: %d\nDupa mascarea bitului 2: %d\nDupa ce bitul 6 devine 0: %d\n",Biti1,Masc2,x);
-	}*/
-
+		printf("Dupa ce bitul 6 devine 0: %d\n", x);
+		printf("\n");
+	}
 }
