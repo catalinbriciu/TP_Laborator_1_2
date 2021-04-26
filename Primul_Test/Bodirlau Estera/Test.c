@@ -1,44 +1,45 @@
 #include<stdio.h>
 #include<stdlib.h>
+
 #pragma warning(disable:4996)
 
 
-unsigned __int8 Stiva[255];
-unsigned __int8 VarfStiva;
-unsigned __int32 Number;
-void ReadInput(unsigned __int32 *Value);
+unsigned short int Stiva[10];
+unsigned char VarfStiva;
+
+void Push(unsigned __int8* Stiva, unsigned __int8* VarfStiva, unsigned __int8 Value);
+unsigned short int Pop(unsigned short int* Stiva, unsigned char* VarfStiva);
 
 int main() {
-	ReadInput(&Number);
+	InitStack(Stiva, &VarfStiva);
 	system("pause");
 	return 0;
 }
 
+void InitStiva(unsigned short int* Stiva, unsigned char* VarfStiva) {
+	Push(Stiva, VarfStiva, 52);
+	Push(Stiva, VarfStiva, 636);
+	Push(Stiva, VarfStiva, 777);
+	Push(Stiva, VarfStiva, 1000);
+	Push(Stiva, VarfStiva, 3);
+	Push(Stiva, VarfStiva, 12);
+	Push(Stiva, VarfStiva, 782);
+}
 unsigned char Pop(unsigned char * Stiva, unsigned char *VarfStiva)
 {
-	if ((*VarfStiva) > 0)
 		return Stiva[(*VarfStiva)--];
-	else
-		return -1;
+
 }
 
-void Push(unsigned char* Stiva, unsigned char * VarfStiva, unsigned char Value)
-{
-	
-	
-		Stiva[++(*VarfStiva)] = Value
-	
+void Push(unsigned __int8* Stiva, unsigned __int8* VarfStiva, unsigned __int8 Value) {
+	Stiva[++(*VarfStiva)] = Value;
 }
 
-void ReadInput(unsigned __int32 *Value) {
-	if (scanf("%u", Value)) {}
-	else {}
-}
 
 //e)
 unsigned char NumarareBiti(unsigned char Number) {
 	unsigned char NumarareDe1 = 0;
-	for (unsigned char Index = 0; Index < 8; Index++) {
+	for (unsigned char Index = 0; Index < 16; Index++) {
 		if (Number & (1 << Index)) {
 			NumarareDe1++;
 		}
