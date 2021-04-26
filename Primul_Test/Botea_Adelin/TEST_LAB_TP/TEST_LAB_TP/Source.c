@@ -21,10 +21,6 @@ void pop()
 	else vf--;
 }
 
-int peek()
-{
-	return Stack[vf];
-}
 
 void print()
 {
@@ -59,7 +55,15 @@ int main()
 		if (Stack[vf] >> 1 & 1)
 			nr2 = Stack[vf] - 2;
 		else
-			
+			nr2 = Stack[vf];
+		
+		if (Stack[vf] >> 5 & 1)
+			nr3 = Stack[vf] - 32;
+		else
+			nr3 = Stack[vf];
+		printf("Numarul de biti de 1 este:%d, Nr-ul dupa mascarea bitului 2 este:%d, Nr-ul dupa ce bitul 6 devine 0 este:%d\n", ok, nr2, nr3);
+
+			pop();
 	}
 	system("pause");
 	return 0;
