@@ -1,2 +1,3 @@
 ﻿  Source.c
-  TEST_LAB_TP.vcxproj -> C:\Users\adeli\source\repos\TEST_LAB_TP\Debug\TEST_LAB_TP.exe
+c:\users\adeli\documents\github\tp_laborator_1_2\primul_test\botea_adelin\test_lab_tp\test_lab_tp\source.c(46): warning C4550: expression evaluates to a function which is missing an argument list
+  TEST_LAB_TP.vcxproj -> C:\Users\adeli\Documents\GitHub\TP_Laborator_1_2\Primul_Test\Botea_Adelin\TEST_LAB_TP\Debug\TEST_LAB_TP.exe
