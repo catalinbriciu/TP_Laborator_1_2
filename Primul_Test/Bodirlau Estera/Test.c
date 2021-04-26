@@ -7,7 +7,7 @@
 unsigned short int Stiva[10];
 unsigned char VarfStiva;
 
-void Push(unsigned __int8* Stiva, unsigned __int8* VarfStiva, unsigned __int8 Value);
+void Push(unsigned short int* Stiva, unsigned char* VarfStiva, unsigned short int Value);
 unsigned short int Pop(unsigned short int* Stiva, unsigned char* VarfStiva);
 
 int main() {
@@ -31,7 +31,7 @@ unsigned char Pop(unsigned char * Stiva, unsigned char *VarfStiva)
 
 }
 
-void Push(unsigned __int8* Stiva, unsigned __int8* VarfStiva, unsigned __int8 Value) {
+void Push(unsigned short int* Stiva, unsigned char* VarfStiva, unsigned short int Value) {
 	Stiva[++(*VarfStiva)] = Value;
 }
 
