@@ -29,11 +29,44 @@ int Manna_Pnueli(int n)
 	else if (n < 12) return Manna_Pnueli(Manna_Pnueli(n + 2));
 }
 
+//Calcul Cmmdc(a,b)
+int Cmmdc(int a, int b)
+{
+	int r;
+	r = a % b;
+	if (r)
+		return Cmmdc(b, r);
+	else
+		return b;
+}
+
+//Calcul Fibonacci(n)
+int Fibbonacci(int n)
+{
+	if (n == 0) return 0;
+	else if (n == 1) return 1;
+	else return Fibbonacci(n - 1) + Fibbonacci(n - 2);
+}
+
+//Inversarea cifrelor unui număr
+int Inversare(int n)
+{
+	if (n == 0) return 0;
+	else
+	{
+		printf("%d", n % 10);
+		return Inversare(n / 10);
+	}
+}
+
 int main() {
 	printf("%d\n", Sum(4));
 	printf("%d\n", Fact(4));
 	printf("%d\n", Sumcif(44));
-	printf("%d\n", Manna_Pnueli (16));
+	printf("%d\n", Manna_Pnueli(16));
+	printf("%d\n", Cmmdc(16, 8));
+	printf("%d\n", Fibbonacci(4));
+	printf("%d\n", Inversare(453));
 
 	system("pause");
 	return 0;
