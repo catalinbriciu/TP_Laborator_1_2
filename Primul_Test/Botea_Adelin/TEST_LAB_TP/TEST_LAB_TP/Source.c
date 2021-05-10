@@ -43,7 +43,7 @@ int main()
 		scanf("%d", &nr);
 		push(nr);
 	}
-	while (!Empty)
+	while (!Empty())
 	{ 
 		ok = 0;
 		for (i = 31; i >= 0; i--)
@@ -52,8 +52,8 @@ int main()
 			if (k & 1)
 				ok++;
 		}
-		if (Stack[vf] >> 1 & 1)
-			nr2 = Stack[vf] - 2;
+		if (Stack[vf] >> 2 & 1)
+			nr2 = Stack[vf] - 4;
 		else
 			nr2 = Stack[vf];
 		
