@@ -1,8 +1,9 @@
-#include <stdlib.h>
 #include <stdio.h>
-unsigned char a[50];
-int DI(int li, int ls) {
+#include <stdlib.h>
+int DI(int li, int ls)
+{
 	int x, y;
+	int a[100];
 	if (li < ls) {
 		x = DI(li, (li + ls) / 2);
 		y = DI((li + ls) / 2 + 1, ls);
@@ -14,11 +15,12 @@ int DI(int li, int ls) {
 }
 int main()
 {
-	int n = 20;
-	for (i = 0; i < 20; i++) {
-		{printf("a[%d]=", i);
-		scanf("%d", &a[i]); }
-		printf("%d ", DI(0, n - 1));
+	int n, i, a[100];
+	printf("Nr-ul de elem:");
+	scanf("%d", &n);
+	for (i = 0; i < n; i++)
+		scanf("%d", &a[i]);
+	printf("%d ", DI(0, n - 1));
 	system("pause");
 	return 0;
 }
