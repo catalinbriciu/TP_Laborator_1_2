@@ -16,9 +16,9 @@ int main()
 {
 	int n = 20;
 	for (i = 0; i < 20; i++) {
-		printf("a[%d]=", i);
-		scanf("%d", &a[i]);
-	printf("%d ", DI(0, n - 1));
+		{printf("a[%d]=", i);
+		scanf("%d", &a[i]); }
+		printf("%d ", DI(0, n - 1));
 	system("pause");
 	return 0;
 }
