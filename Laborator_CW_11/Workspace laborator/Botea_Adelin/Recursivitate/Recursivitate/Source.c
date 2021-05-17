@@ -41,7 +41,7 @@ int cmmdc(int n1,int n2)
 }
 int Fibonacci(int n)
 {
-	
+	;
 }
 int main()
 {
