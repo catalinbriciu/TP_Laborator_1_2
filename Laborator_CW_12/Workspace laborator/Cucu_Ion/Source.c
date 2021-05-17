@@ -17,12 +17,14 @@ int DI(int li, int ls) {
 
 int main() {
 	int i;
+	
 	printf("n=");
 	scanf("%d\n", &n);
 	for (i = 0; i < n; i++) {
+		printf("a[%d]=", i);
 		scanf("%d", &a[i]);
 	}
-	printf("%d ", DI(0, n - 1));
+	printf("vectorul este %d ", DI(0, n - 1));
 
 	system("pause");
 	return 0;

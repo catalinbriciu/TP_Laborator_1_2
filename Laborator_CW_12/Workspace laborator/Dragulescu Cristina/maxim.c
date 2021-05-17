@@ -1,6 +1,9 @@
-#include <stdlib.h>
-#include <stdio.h>
-unsigned char a[50];
+#include<stdio.h>
+#include<stdlib.h>
+
+int sir[8] = { 2,1,5,7,3,4,9,8 };
+
+
 int DI(int li, int ls) {
 	int x, y;
 	if (li < ls) {
@@ -10,15 +13,20 @@ int DI(int li, int ls) {
 		else return x;
 	}
 	else
-		return a[li];
+		return sir[li];
 }
+
+
 int main()
 {
-	int n = 20;
-	for (i = 0; i < 20; i++) {
-		{printf("a[%d]=", i);
-		scanf("%d", &a[i]); }
-		printf("%d ", DI(0, n - 1));
+	int i;
+	
+	for (i = 0; i < 7; i++)
+	{
+		printf("%d", sir[i]);
+	}
+	printf("\nMaxim: %d", DI(2, 8));
 	system("pause");
 	return 0;
+
 }
