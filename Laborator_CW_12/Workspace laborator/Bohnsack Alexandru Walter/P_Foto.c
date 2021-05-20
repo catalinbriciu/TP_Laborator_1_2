@@ -6,12 +6,12 @@
 int x[8] = { -1,-1,-1,0,1,1,1,0 };
 int y[8] = { -1,0,1,1,1,0,-1,-1 };
 int A[100][100] = { {0,0,0,1,1,0,1,0},{1,1,0,0,0,1,0,0},{1,1,0,1,0,1,0,0},{1,1,0,0,0,0,0,0},{1,1,0,0,0,0,0,0},{1,0,0,1,0,0,0,1},{1,1,1,1,0,0,1,0},{0,0,0,0,0,0,0,1} }, n = 8, numarul_de_obiecte = 1;
-void fill_obiect(int i, int j) 
-{ 
-	int l; 
+void fill_obiect(int i, int j)
+{
+	int l;
 	if (A[i][j] == 1) {
-		A[i][j] = numarul_de_obiecte; 
-		for (l = 0; l < 8; l++) 
+		A[i][j] = numarul_de_obiecte;
+		for (l = 0; l < 8; l++)
 			fill_obiect(i + x[l], j + y[l]);
 	}
 }
@@ -35,6 +35,6 @@ void main()
 			}
 		}
 	}
-	printf("\nIn fotografie sunt %d obiecte.\n", numarul_de_obiecte - 1);
+	printf("\nIn fotografie sunt %d obiecte.\n\n", numarul_de_obiecte - 1);
 	system("pause");
 }
