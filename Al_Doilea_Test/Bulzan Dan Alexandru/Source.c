@@ -41,12 +41,12 @@ int ProblemaMinim(int S, int N)
 	int Contor = 0;
 	int PutereMaxima = (int)log2(S);
 	if (PutereMaxima < N)N = PutereMaxima;
-	while (S&&N)
+
+	while (S>=2&&N)
 	{
 		S -= pow(2, N);
-		N -= 1;
 		PutereMaxima = (int)log2(S);
-		if (PutereMaxima < N)N = PutereMaxima;
+		N = PutereMaxima;
 		Contor += 1;
 		
 	
