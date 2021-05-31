@@ -1,7 +1,8 @@
 #include<stdlib.h>
 #include<stdio.h>
 
-char s[21],n,m;
+char s[21];
+int n;
 
 void init(int k)
 {
