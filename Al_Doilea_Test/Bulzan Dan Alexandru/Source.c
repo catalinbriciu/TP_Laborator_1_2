@@ -22,18 +22,26 @@ int ProblemaMaxim(int S, int N)
 {
 	int Contor = 0;
 
-	while (S)
+	while (S>=2)
+	{
+		S -= 2;
+		Contor += 1;
+	}
+	if (S)
 	{
 		S -= 1;
 		Contor += 1;
+
 	}
+
 	return Contor;
 }
 int ProblemaMinim(int S, int N)
 {
 	int Contor = 0;
-
-	while (N)
+	int PutereMaxima = (int)log2(S);
+	if (PutereMaxima < N)N = PutereMaxima;
+	while ((S-pow(2,N))>=2&&N)
 	{
 		S -= pow(2, N);
 		N -= 1;
