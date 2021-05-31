@@ -14,13 +14,13 @@ void BK(int k);
 int main()
 {
 	int i;
-	//printf("Cuvantul este: ");
-	//scanf("%s", cuvant);
-	printf("Dati lungimea sirului (minim 4): ");
+	printf("Cuvantul este: ");
+	scanf("%s", cuvant);
+	/*printf("Dati lungimea sirului (minim 4): ");
 	scanf("%d", &n);
 	printf("Dati cuvantul: ");
 	for (i = 0; i < n; i++)
-		scanf("%c", &cuvant[i]);
+		scanf("%c", &cuvant[i]);*/
 
 	BK(1);
 	system("pause");
@@ -29,7 +29,7 @@ int main()
 void BK(int k)
 {
 	int i;
-	for (i = 1; i <= n; i++) //strlen(cuvant)
+	for (i = 1; i <= strlen(cuvant); i++) //strlen(cuvant)
 	{
 		v[k] = cuvant[i];
 		if (valid(k))
@@ -52,14 +52,14 @@ int valid(int k)
 }
 int solutie(int k)
 {
-	if (k == n) //strlen(cuvant)
+	if (k == strlen(cuvant)) //strlen(cuvant)
 		return 1;
 	return 0;
 }
 void afisare(int k)
 {
 	int i;
-	for (i = 1; i <= n; i++) //strlen(cuvant)
+	for (i = 1; i <= strlen(cuvant); i++) //strlen(cuvant)
 		printf("%c", v[i]);
 	printf("\n");
 }
