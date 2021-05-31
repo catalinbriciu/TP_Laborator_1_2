@@ -21,15 +21,16 @@ int main()
 	printf("Dati cuvantul: ");
 	for (i = 0; i < n; i++)
 		scanf("%c", &cuvant[i]);*/
+		//printf("%d", strlen(cuvant));
 
-	BK(1);
+	BK(0);
 	system("pause");
 	return 0;
 }
 void BK(int k)
 {
 	int i;
-	for (i = 1; i <= strlen(cuvant); i++) //strlen(cuvant)
+	for (i = 0; i < strlen(cuvant); i++) //strlen(cuvant)
 	{
 		v[k] = cuvant[i];
 		if (valid(k))
@@ -44,10 +45,10 @@ void BK(int k)
 int valid(int k)
 {
 	int i;
-	for (i = 1; i <= k - 1; i++)
+	for (i = 0; i < k; i++)
 		if (i % 2 == 0 && strchr("aeiou", v[i]) == NULL) //v[i]=='a' || v[i]=='e' || v[i]=='i' || v[i]=='o'||v[i]=='u'
-			//if (v[i] == v[k])
-			return 0;
+			if (v[i] == v[k])
+				return 0;
 	return 1;
 }
 int solutie(int k)
@@ -59,7 +60,7 @@ int solutie(int k)
 void afisare(int k)
 {
 	int i;
-	for (i = 1; i <= strlen(cuvant); i++) //strlen(cuvant)
+	for (i = 0; i < strlen(cuvant); i++) //strlen(cuvant)
 		printf("%c", v[i]);
 	printf("\n");
 }
